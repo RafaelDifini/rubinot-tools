@@ -1,4 +1,4 @@
-# ⚔️ Tibia Tools
+# ⚔️ Rubinot Tools
 
 Um conjunto de **calculadoras úteis para Tibia**, desenvolvido com **React + Vite + Shadcn/UI + Tailwind**.  
 Ferramentas atuais:
@@ -11,7 +11,7 @@ Ferramentas atuais:
 ## 🚀 Preview
 
 
-👉 Acesse aqui: [Tibia Tools no GitHub Pages](https://rafaeldifini.github.io/rubinot-tools/) 
+👉 Acesse aqui: [Rubinot Tools no GitHub Pages](https://rafaeldifini.github.io/rubinot-tools/) 
 ---
 
 ## 🛠️ Tecnologias Usadas
