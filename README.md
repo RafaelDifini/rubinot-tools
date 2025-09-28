@@ -25,12 +25,4 @@ Ferramentas atuais:
 - 🔔 [Sonner](https://sonner.emilkowal.ski/) → para toasts e feedbacks visuais  
 - 📦 [gh-pages](https://github.com/tschaub/gh-pages) → deploy no GitHub Pages  
 
----
 
-## 📦 Instalação
-
-Clone o repositório:
-
-```bash
-git clone https://github.com/SEU-USUARIO/tibia-tools.git
-cd tibia-tools
