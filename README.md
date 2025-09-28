@@ -10,8 +10,8 @@ Ferramentas atuais:
 
 ## 🚀 Preview
 
-👉 Acesse aqui: [Tibia Tools no GitHub Pages]([https://SEU-USUARIO.github.io/tibia-tools/](https://rafaeldifini.github.io/rubinot-tools/))  
 
+👉 Acesse aqui: [Tibia Tools no GitHub Pages](https://rafaeldifini.github.io/rubinot-tools/) 
 ---
 
 ## 🛠️ Tecnologias Usadas
