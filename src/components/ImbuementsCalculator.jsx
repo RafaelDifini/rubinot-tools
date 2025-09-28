@@ -3,6 +3,16 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import VoidGif from "@/assets/Powerful_Void.gif"
+import StrikeGif from "@/assets/Powerful_Strike.gif"
+import VampGif from "@/assets/Powerful_Vampirism.gif"
+
+const IMAGES = {
+    void: VoidGif,
+    strike: StrikeGif,
+    vamp: VampGif,
+}
+
 const IMBUEMENTS = [
     {
         name: "Powerful Void",
@@ -132,7 +142,17 @@ export default function ImbuementsCalculator() {
                     return (
                         <Card key={imbue.key} className="bg-slate-900 text-slate-100">
                             <CardHeader>
-                                <CardTitle className="text-lg font-bold">{imbue.name}</CardTitle>
+                                <CardHeader>
+                                    <CardTitle className="text-lg font-bold flex items-center gap-3">
+                                        <img
+                                            src={IMAGES[imbue.key]}
+                                            alt={imbue.name}
+                                            className="w-10 h-10 rounded-md"
+                                        />
+                                        {imbue.name}
+                                    </CardTitle>
+                                </CardHeader>
+
                             </CardHeader>
                             <CardContent className="space-y-4">
                                 {imbue.items.map((it) => (

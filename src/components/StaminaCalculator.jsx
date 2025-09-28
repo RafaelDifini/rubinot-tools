@@ -140,10 +140,10 @@ export default function StaminaCalculator() {
 
                     <div className="flex flex-col sm:flex-row gap-2 pt-4">
                         <Badge variant="secondary" className="bg-orange-500/20 text-orange-300 border border-orange-600">
-                            🔸 Laranja (≤ 39:00): 1 stamina a cada 3m Offline/Protection, 6m Trainer
+                            🔸 Laranja (≤ 39:00): 1m stamina a cada 3m Offline/Protection, 6m Trainer
                         </Badge>
                         <Badge variant="secondary" className="bg-green-500/20 text-green-300 border border-green-600">
-                            🟩 Verde (&gt; 39:00): 1 stamina a cada 6m Offline/Trainer, 5m Protection
+                            🟩 Verde (&gt; 39:00): 1m stamina a cada 6m Offline/Trainer, 5m Protection
                         </Badge>
                     </div>
                 </div>
