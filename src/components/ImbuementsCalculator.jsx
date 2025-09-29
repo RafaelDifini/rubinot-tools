@@ -88,31 +88,33 @@ export default function ImbuementsCalculator() {
             )
 
         const options = [
-            { label: "Só Tokens", value: tokenCost },
-            { label: "Só Itens", value: itemsCost },
-            { label: "2 Tokens + Itens", value: twoTokensCost },
-            { label: "4 Tokens + Itens", value: fourTokensCost },
+            { key: "tokens", label: "Só Tokens", value: tokenCost },
+            { key: "items", label: "Só Itens", value: itemsCost },
+            { key: "2tokens", label: "2 Tokens + Itens", value: twoTokensCost },
+            { key: "4tokens", label: "4 Tokens + Itens", value: fourTokensCost },
         ]
+
 
         const best = options.reduce((min, o) => (o.value < min.value ? o : min), options[0])
         return { options, best }
     }
 
-    const explanation = (imbue, label) => {
-        if (label === "2 Tokens + Itens") {
+    const explanation = (imbue, key) => {
+        if (key === "2tokens") {
             return `2 tokens substituem os ${imbue.items[0].qty}x ${imbue.items[0].name}, o resto você compra.`
         }
-        if (label === "4 Tokens + Itens") {
+        if (key === "4tokens") {
             return `4 tokens substituem ${imbue.items[0].qty}x ${imbue.items[0].name} e ${imbue.items[1].qty}x ${imbue.items[1].name}, você compra só ${imbue.items[2].qty}x ${imbue.items[2].name}.`
         }
-        if (label === "Só Itens") {
+        if (key === "items") {
             return `Você compra todos os itens manualmente.`
         }
-        if (label === "Só Tokens") {
+        if (key === "tokens") {
             return `Você paga tudo apenas com tokens (mais simples, mas geralmente mais caro).`
         }
         return ""
     }
+
 
     return (
         <div className="space-y-6">
@@ -163,7 +165,7 @@ export default function ImbuementsCalculator() {
                                         <Input
                                             id={`${imbue.key}-${it.name}`}
                                             type="number"
-                                            placeholder="Preço"
+                                            placeholder="Preço por UN."
                                             onChange={(e) =>
                                                 handlePriceChange(imbue.key, it.name, e.target.value)
                                             }
@@ -184,13 +186,13 @@ export default function ImbuementsCalculator() {
                                     </p>
 
                                     <p className="text-xs text-slate-400">
-                                        {explanation(imbue, result.best.label)}
+                                        {explanation(imbue, result.best.key)}
                                     </p>
 
                                     <div className="flex flex-col gap-1 mt-2">
                                         {result.options.map((o, i) => (
                                             <Badge
-                                                key={i}
+                                                key={o.key}
                                                 variant="outline"
                                                 className="justify-start bg-slate-700/40 text-slate-200"
                                             >
