@@ -8,22 +8,37 @@ function App() {
   const [selected, setSelected] = useState("calculadoras")
 
   return (
-  <div className="flex flex-col min-h-screen bg-slate-900">
-      {/* Navbar fixa no topo */}
-      <Navbar />
+    <div style={{ background: "var(--bg-base)", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      {/* Ambient background glow */}
+      <div style={{
+        position: "fixed",
+        inset: 0,
+        pointerEvents: "none",
+        zIndex: 0,
+        background: `
+          radial-gradient(ellipse 60% 40% at 20% 10%, oklch(0.72 0.20 185 / 0.07) 0%, transparent 70%),
+          radial-gradient(ellipse 40% 50% at 80% 80%, oklch(0.65 0.18 200 / 0.05) 0%, transparent 60%)
+        `,
+      }} />
 
-      {/* Corpo com sidebar + conteúdo */}
-      <div className="flex flex-1">
-        {/* Sidebar com tom diferente */}
-        <Sidebar onSelect={setSelected} className="bg-slate-800" />
-
-        {/* Área de conteúdo */}
-        <main className="flex-1 p-6 overflow-y-auto text-slate-100">
-          {selected === "calculadoras" && <CalculatorsPage />}
-        </main>
+      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+        <Navbar />
+        <div style={{ display: "flex", flex: 1 }}>
+          <Sidebar onSelect={setSelected} />
+          <main style={{
+            flex: 1,
+            padding: "40px 48px",
+            overflowY: "auto",
+            color: "var(--text-high)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}>
+            {selected === "calculadoras" && <CalculatorsPage />}
+          </main>
+        </div>
       </div>
 
-      {/* Toast container */}
       <Toaster richColors position="top-right" />
     </div>
   )
