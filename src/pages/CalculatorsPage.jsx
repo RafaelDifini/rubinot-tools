@@ -2,11 +2,13 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import StaminaCalculator from "@/components/StaminaCalculator"
 import ImbuementsCalculator from "@/components/ImbuementsCalculator"
 import RcGoldCalculator from "@/components/RcGoldCalculator"
+import KkPriceCalculator from "@/components/KkPriceCalculator"
 
 const TABS = [
   { value: "stamina",    label: "Stamina",    icon: "⚡" },
   { value: "imbuements", label: "Imbuements", icon: "🧪" },
   { value: "rcgold",     label: "RC × Gold",  icon: "💎" },
+  { value: "kkprice",    label: "Preço do KK", icon: "💰" },
 ]
 
 export default function CalculatorsPage() {
@@ -87,6 +89,7 @@ export default function CalculatorsPage() {
           { value: "stamina",    Component: StaminaCalculator },
           { value: "imbuements", Component: ImbuementsCalculator },
           { value: "rcgold",     Component: RcGoldCalculator },
+          { value: "kkprice",    Component: KkPriceCalculator },
         ].map(({ value, Component }) => (
           <TabsContent key={value} value={value}>
             <div style={{
