@@ -33,14 +33,14 @@ function AnimatedNumber({ value, digits = 2 }) {
 
 export default function KkPriceCalculator() {
   const [rubiniPrice, setRubiniPrice] = useState("")
-  const [rcInKk, setRcInKk]           = useState("")
+  const [rcInGold, setRcInGold]       = useState("")
   const [kkAmount, setKkAmount]       = useState("")
 
   const rubini = Number(rubiniPrice)
-  const rcKk   = Number(rcInKk)
+  const rcGold = Number(rcInGold)
 
   const pricePerRc = rubini > 0 ? rubini / 1000 : null
-  const pricePerKk = pricePerRc && rcKk > 0 ? pricePerRc / rcKk : null
+  const pricePerKk = pricePerRc && rcGold > 0 ? pricePerRc / (rcGold / 1_000_000) : null
 
   const kkAmountValue = Number(kkAmount)
   const totalPrice = pricePerKk && kkAmountValue > 0 ? pricePerKk * kkAmountValue : null
@@ -170,7 +170,7 @@ export default function KkPriceCalculator() {
                 type="number"
                 value={rubiniPrice}
                 onChange={e => setRubiniPrice(e.target.value)}
-                placeholder="ex: 25,00"
+                placeholder="ex: 90"
               />
             </div>
             <span className="kk-footnote" style={{ alignSelf: "flex-end" }}>R$</span>
@@ -183,12 +183,12 @@ export default function KkPriceCalculator() {
               <input
                 className="kk-input"
                 type="number"
-                value={rcInKk}
-                onChange={e => setRcInKk(e.target.value)}
-                placeholder="ex: 25"
+                value={rcInGold}
+                onChange={e => setRcInGold(e.target.value)}
+                placeholder="ex: 94600"
               />
             </div>
-            <span className="kk-footnote" style={{ alignSelf: "flex-end" }}>kk / RC</span>
+            <span className="kk-footnote" style={{ alignSelf: "flex-end" }}>gold / RC</span>
           </div>
         </div>
 
@@ -246,7 +246,7 @@ export default function KkPriceCalculator() {
 
         {/* Footnote */}
         <div className="kk-divider">
-          <span className="kk-footnote">preço/kk = (preço de 1000 RC ÷ 1000) ÷ preço do RC em kk</span>
+          <span className="kk-footnote">preço/kk = (preço de 1000 RC ÷ 1000) ÷ (preço do RC em gold ÷ 1.000.000)</span>
         </div>
 
       </div>
