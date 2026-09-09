@@ -142,14 +142,122 @@ var x=e=>e.replace(/([a-z0-9])([A-Z])/g,`$1-$2`).toLowerCase(),S=e=>e.replace(/^
           color: var(--accent-dim);
           opacity: 0.6;
         }
-      `}),(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`20px`},children:[(0,y.jsxs)(`div`,{className:`rc-price-block`,children:[(0,y.jsxs)(`svg`,{viewBox:`0 0 40 40`,fill:`none`,style:{width:40,height:40,flexShrink:0},children:[(0,y.jsx)(`polygon`,{points:`20,2 35,13 30,36 10,36 5,13`,fill:`oklch(0.40 0.18 185)`,stroke:`oklch(0.72 0.20 185)`,strokeWidth:`1.2`}),(0,y.jsx)(`polygon`,{points:`20,2 35,13 20,9`,fill:`oklch(0.62 0.18 185)`,opacity:`0.75`}),(0,y.jsx)(`polygon`,{points:`20,9 35,13 30,36 10,36 5,13`,fill:`oklch(0.32 0.15 185)`,opacity:`0.6`}),(0,y.jsx)(`line`,{x1:`20`,y1:`9`,x2:`20`,y2:`36`,stroke:`oklch(0.72 0.20 185)`,strokeWidth:`0.6`,opacity:`0.4`}),(0,y.jsx)(`line`,{x1:`5`,y1:`13`,x2:`35`,y2:`13`,stroke:`oklch(0.72 0.20 185)`,strokeWidth:`0.6`,opacity:`0.3`})]}),(0,y.jsxs)(`div`,{style:{flex:1},children:[(0,y.jsx)(`label`,{className:`rc-label`,children:`Preço do Rubini Coin`}),(0,y.jsx)(`input`,{className:`rc-input`,type:`number`,value:e,onChange:e=>t(e.target.value),placeholder:`ex: 12500`})]}),(0,y.jsx)(`span`,{className:`rc-footnote`,style:{alignSelf:`flex-end`},children:`em gold`})]}),(0,y.jsx)(`div`,{className:`rc-divider`,children:(0,y.jsx)(`span`,{className:`rc-section-label`,children:`Conversão`})}),(0,y.jsxs)(`div`,{className:`rc-grid`,children:[(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`8px`},children:[(0,y.jsx)(`label`,{className:`rc-label`,children:`RC → Gold (kk)`}),(0,y.jsx)(`input`,{className:`rc-input`,type:`number`,value:n,onChange:e=>r(e.target.value),placeholder:`qtd. de RC`}),(0,y.jsxs)(`div`,{className:`rc-result-panel ${s===null?``:`has-value`}`,children:[(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tr`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-bl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-br`}),s===null?(0,y.jsx)(`div`,{className:`rc-empty`,children:`— aguardando —`}):(0,y.jsxs)(y.Fragment,{children:[(0,y.jsx)(`div`,{className:`rc-value`,children:(0,y.jsx)(xs,{value:s})}),(0,y.jsx)(`div`,{className:`rc-unit`,children:`kk em gold`})]})]})]}),(0,y.jsx)(`div`,{className:`rc-arrow-col`,children:`⇄`}),(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`8px`},children:[(0,y.jsx)(`label`,{className:`rc-label`,children:`Gold (kk) → RC`}),(0,y.jsx)(`input`,{className:`rc-input`,type:`number`,value:i,onChange:e=>a(e.target.value),placeholder:`qtd. em kk`}),(0,y.jsxs)(`div`,{className:`rc-result-panel ${c===null?``:`has-value`}`,children:[(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tr`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-bl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-br`}),c===null?(0,y.jsx)(`div`,{className:`rc-empty`,children:`— aguardando —`}):(0,y.jsxs)(y.Fragment,{children:[(0,y.jsx)(`div`,{className:`rc-value`,children:(0,y.jsx)(xs,{value:c})}),(0,y.jsx)(`div`,{className:`rc-unit`,children:`Rubini Coins`})]})]})]})]}),(0,y.jsx)(`div`,{className:`rc-divider`,children:(0,y.jsx)(`span`,{className:`rc-footnote`,children:`1 kk = 1.000.000 gold`})})]})]})}var Cs=[{value:`stamina`,label:`Stamina`,icon:`⚡`},{value:`imbuements`,label:`Imbuements`,icon:`🧪`},{value:`rcgold`,label:`RC × Gold`,icon:`💎`}];function ws(){return(0,y.jsxs)(`div`,{style:{width:`100%`,maxWidth:`980px`},children:[(0,y.jsxs)(`div`,{style:{marginBottom:`32px`},children:[(0,y.jsx)(`h1`,{className:`font-display`,style:{fontSize:`clamp(1.3rem, 2.5vw, 1.75rem)`,fontWeight:700,letterSpacing:`0.14em`,color:`var(--text-high)`,textTransform:`uppercase`,lineHeight:1.1,marginBottom:`6px`},children:`Centro de Calculadoras`}),(0,y.jsx)(`p`,{style:{fontSize:`0.82rem`,color:`var(--text-low)`,letterSpacing:`0.04em`},children:`Ferramentas para otimizar seu progresso em Tibia`})]}),(0,y.jsxs)(wo,{defaultValue:`stamina`,children:[(0,y.jsx)(To,{style:{display:`inline-flex`,gap:`4px`,background:`oklch(0.14 0.022 220 / 0.8)`,backdropFilter:`blur(16px)`,WebkitBackdropFilter:`blur(16px)`,border:`1px solid var(--border-sub)`,borderRadius:`10px`,padding:`4px`,marginBottom:`20px`},children:Cs.map(({value:e,label:t,icon:n})=>(0,y.jsxs)(Eo,{value:e,style:{position:`relative`,display:`flex`,alignItems:`center`,gap:`6px`,padding:`8px 20px`,borderRadius:`7px`,fontSize:`0.82rem`,fontWeight:500,letterSpacing:`0.03em`,border:`1px solid transparent`,cursor:`pointer`,transition:`all 0.22s cubic-bezier(0.4,0,0.2,1)`,color:`var(--text-low)`,background:`transparent`,outline:`none`},className:`
+      `}),(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`20px`},children:[(0,y.jsxs)(`div`,{className:`rc-price-block`,children:[(0,y.jsxs)(`svg`,{viewBox:`0 0 40 40`,fill:`none`,style:{width:40,height:40,flexShrink:0},children:[(0,y.jsx)(`polygon`,{points:`20,2 35,13 30,36 10,36 5,13`,fill:`oklch(0.40 0.18 185)`,stroke:`oklch(0.72 0.20 185)`,strokeWidth:`1.2`}),(0,y.jsx)(`polygon`,{points:`20,2 35,13 20,9`,fill:`oklch(0.62 0.18 185)`,opacity:`0.75`}),(0,y.jsx)(`polygon`,{points:`20,9 35,13 30,36 10,36 5,13`,fill:`oklch(0.32 0.15 185)`,opacity:`0.6`}),(0,y.jsx)(`line`,{x1:`20`,y1:`9`,x2:`20`,y2:`36`,stroke:`oklch(0.72 0.20 185)`,strokeWidth:`0.6`,opacity:`0.4`}),(0,y.jsx)(`line`,{x1:`5`,y1:`13`,x2:`35`,y2:`13`,stroke:`oklch(0.72 0.20 185)`,strokeWidth:`0.6`,opacity:`0.3`})]}),(0,y.jsxs)(`div`,{style:{flex:1},children:[(0,y.jsx)(`label`,{className:`rc-label`,children:`Preço do Rubini Coin`}),(0,y.jsx)(`input`,{className:`rc-input`,type:`number`,value:e,onChange:e=>t(e.target.value),placeholder:`ex: 12500`})]}),(0,y.jsx)(`span`,{className:`rc-footnote`,style:{alignSelf:`flex-end`},children:`em gold`})]}),(0,y.jsx)(`div`,{className:`rc-divider`,children:(0,y.jsx)(`span`,{className:`rc-section-label`,children:`Conversão`})}),(0,y.jsxs)(`div`,{className:`rc-grid`,children:[(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`8px`},children:[(0,y.jsx)(`label`,{className:`rc-label`,children:`RC → Gold (kk)`}),(0,y.jsx)(`input`,{className:`rc-input`,type:`number`,value:n,onChange:e=>r(e.target.value),placeholder:`qtd. de RC`}),(0,y.jsxs)(`div`,{className:`rc-result-panel ${s===null?``:`has-value`}`,children:[(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tr`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-bl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-br`}),s===null?(0,y.jsx)(`div`,{className:`rc-empty`,children:`— aguardando —`}):(0,y.jsxs)(y.Fragment,{children:[(0,y.jsx)(`div`,{className:`rc-value`,children:(0,y.jsx)(xs,{value:s})}),(0,y.jsx)(`div`,{className:`rc-unit`,children:`kk em gold`})]})]})]}),(0,y.jsx)(`div`,{className:`rc-arrow-col`,children:`⇄`}),(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`8px`},children:[(0,y.jsx)(`label`,{className:`rc-label`,children:`Gold (kk) → RC`}),(0,y.jsx)(`input`,{className:`rc-input`,type:`number`,value:i,onChange:e=>a(e.target.value),placeholder:`qtd. em kk`}),(0,y.jsxs)(`div`,{className:`rc-result-panel ${c===null?``:`has-value`}`,children:[(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-tr`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-bl`}),(0,y.jsx)(`div`,{className:`rc-corner rc-corner-br`}),c===null?(0,y.jsx)(`div`,{className:`rc-empty`,children:`— aguardando —`}):(0,y.jsxs)(y.Fragment,{children:[(0,y.jsx)(`div`,{className:`rc-value`,children:(0,y.jsx)(xs,{value:c})}),(0,y.jsx)(`div`,{className:`rc-unit`,children:`Rubini Coins`})]})]})]})]}),(0,y.jsx)(`div`,{className:`rc-divider`,children:(0,y.jsx)(`span`,{className:`rc-footnote`,children:`1 kk = 1.000.000 gold`})})]})]})}var Cs=(e,t=2)=>Number(e).toLocaleString(`pt-BR`,{minimumFractionDigits:t,maximumFractionDigits:t});function ws({value:e,digits:t=2}){let n=(0,_.useRef)(null),r=(0,_.useRef)(0);return(0,_.useEffect)(()=>{if(!n.current)return;let i=r.current,a=Number(e);if(isNaN(a))return;let o=performance.now(),s=e=>{let c=Math.min((e-o)/500,1),l=1-(1-c)**4,u=i+(a-i)*l;n.current&&(n.current.textContent=Cs(u,t)),c<1?requestAnimationFrame(s):r.current=a};requestAnimationFrame(s)},[e,t]),(0,y.jsx)(`span`,{ref:n,children:Cs(0,t)})}function Ts(){let[e,t]=(0,_.useState)(``),[n,r]=(0,_.useState)(``),[i,a]=(0,_.useState)(``),o=Number(e),s=Number(n),c=o>0?o/1e3:null,l=c&&s>0?c/s:null,u=Number(i),d=l&&u>0?l*u:null;return(0,y.jsxs)(y.Fragment,{children:[(0,y.jsx)(`style`,{children:`
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Crimson+Pro:ital,wght@0,400;1,300&display=swap');
+
+        .kk-divider {
+          display: flex; align-items: center; gap: 14px; margin: 4px 0;
+        }
+        .kk-divider::before, .kk-divider::after {
+          content: ''; flex: 1; height: 1px;
+          background: linear-gradient(90deg, transparent, var(--border-mid), transparent);
+        }
+        .kk-section-label {
+          font-family: 'Cinzel', serif;
+          font-size: 0.65rem; font-weight: 700;
+          letter-spacing: 0.2em; text-transform: uppercase;
+          color: var(--text-low);
+        }
+        .kk-input {
+          background: oklch(0.10 0.012 235 / 0.90);
+          backdrop-filter: blur(10px);
+          border: 1px solid oklch(1 0 0 / 0.14);
+          color: oklch(0.97 0.005 240);
+          font-size: 1rem;
+          padding: 11px 16px;
+          border-radius: 6px;
+          width: 100%; outline: none;
+          text-align: center;
+          letter-spacing: 0.04em;
+          transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+        }
+        .kk-input:focus {
+          border-color: var(--accent);
+          box-shadow: 0 0 0 3px var(--accent-glow);
+          background: oklch(0.13 0.016 225 / 0.95);
+        }
+        .kk-input::placeholder { color: oklch(0.38 0.006 230); font-style: italic; }
+        .kk-input::-webkit-inner-spin-button,
+        .kk-input::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+        .kk-label {
+          font-size: 0.65rem; font-weight: 600;
+          letter-spacing: 0.12em; text-transform: uppercase;
+          color: var(--text-low);
+          display: block; margin-bottom: 7px;
+        }
+
+        .kk-input-block {
+          background: oklch(0.26 0.026 208 / 0.45);
+          backdrop-filter: blur(28px) saturate(2.2);
+          -webkit-backdrop-filter: blur(28px) saturate(2.2);
+          border: 1px solid oklch(1 0 0 / 0.16);
+          border-radius: 10px;
+          padding: 18px 22px;
+          display: flex; align-items: center; gap: 16px;
+          box-shadow: 0 4px 24px oklch(0 0 0 / 0.25), 0 1px 0 oklch(1 0 0 / 0.07) inset;
+        }
+
+        .kk-result-panel {
+          background: oklch(0.25 0.026 208 / 0.45);
+          backdrop-filter: blur(28px) saturate(2.2);
+          -webkit-backdrop-filter: blur(28px) saturate(2.2);
+          border: 1px solid oklch(1 0 0 / 0.16);
+          border-radius: 8px;
+          padding: 24px 22px;
+          position: relative; overflow: hidden;
+          min-height: 100px;
+          display: flex; flex-direction: column; justify-content: center; align-items: center;
+          transition: border-color 0.25s, box-shadow 0.25s;
+          box-shadow: 0 4px 24px oklch(0 0 0 / 0.30), 0 1px 0 oklch(1 0 0 / 0.07) inset;
+        }
+        .kk-result-panel.has-value {
+          border-color: oklch(0.72 0.20 185 / 0.55);
+          box-shadow: 0 0 28px oklch(0.72 0.20 185 / 0.22), 0 4px 24px oklch(0 0 0 / 0.30), inset 0 1px 0 oklch(1 0 0 / 0.10);
+        }
+        .kk-corner {
+          position: absolute; width: 10px; height: 10px;
+          border-color: var(--border-hi); border-style: solid;
+        }
+        .kk-corner-tl { top: 5px; left: 5px; border-width: 1px 0 0 1px; }
+        .kk-corner-tr { top: 5px; right: 5px; border-width: 1px 1px 0 0; }
+        .kk-corner-bl { bottom: 5px; left: 5px; border-width: 0 0 1px 1px; }
+        .kk-corner-br { bottom: 5px; right: 5px; border-width: 0 1px 1px 0; }
+
+        .kk-value {
+          font-family: 'Cinzel', serif;
+          font-size: clamp(1.8rem, 4vw, 2.5rem);
+          font-weight: 900;
+          color: var(--accent);
+          line-height: 1;
+          letter-spacing: -0.02em;
+          text-shadow: 0 0 20px var(--accent-glow);
+        }
+        .kk-unit {
+          font-family: 'Crimson Pro', serif;
+          font-size: 0.88rem; font-style: italic;
+          color: oklch(0.55 0.008 230);
+          margin-top: 6px; letter-spacing: 0.04em;
+        }
+        .kk-empty {
+          font-family: 'Crimson Pro', serif;
+          font-size: 0.88rem; font-style: italic;
+          color: oklch(0.35 0.006 230);
+          text-align: center; letter-spacing: 0.03em;
+        }
+        .kk-footnote {
+          font-family: 'Crimson Pro', serif;
+          font-size: 0.75rem; font-style: italic;
+          color: var(--text-low); letter-spacing: 0.03em;
+        }
+      `}),(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`20px`},children:[(0,y.jsxs)(`div`,{style:{display:`grid`,gridTemplateColumns:`1fr 1fr`,gap:`16px`},children:[(0,y.jsxs)(`div`,{className:`kk-input-block`,children:[(0,y.jsx)(`span`,{style:{fontSize:`1.6rem`,flexShrink:0},children:`💵`}),(0,y.jsxs)(`div`,{style:{flex:1},children:[(0,y.jsx)(`label`,{className:`kk-label`,children:`1.000 Rubini Coins`}),(0,y.jsx)(`input`,{className:`kk-input`,type:`number`,value:e,onChange:e=>t(e.target.value),placeholder:`ex: 25,00`})]}),(0,y.jsx)(`span`,{className:`kk-footnote`,style:{alignSelf:`flex-end`},children:`R$`})]}),(0,y.jsxs)(`div`,{className:`kk-input-block`,children:[(0,y.jsx)(`span`,{style:{fontSize:`1.6rem`,flexShrink:0},children:`💎`}),(0,y.jsxs)(`div`,{style:{flex:1},children:[(0,y.jsx)(`label`,{className:`kk-label`,children:`Preço do RC no servidor`}),(0,y.jsx)(`input`,{className:`kk-input`,type:`number`,value:n,onChange:e=>r(e.target.value),placeholder:`ex: 25`})]}),(0,y.jsx)(`span`,{className:`kk-footnote`,style:{alignSelf:`flex-end`},children:`kk / RC`})]})]}),(0,y.jsx)(`div`,{className:`kk-divider`,children:(0,y.jsx)(`span`,{className:`kk-section-label`,children:`Preço Justo do KK`})}),(0,y.jsxs)(`div`,{className:`kk-result-panel ${l===null?``:`has-value`}`,children:[(0,y.jsx)(`div`,{className:`kk-corner kk-corner-tl`}),(0,y.jsx)(`div`,{className:`kk-corner kk-corner-tr`}),(0,y.jsx)(`div`,{className:`kk-corner kk-corner-bl`}),(0,y.jsx)(`div`,{className:`kk-corner kk-corner-br`}),l===null?(0,y.jsx)(`div`,{className:`kk-empty`,children:`— informe os dois valores acima —`}):(0,y.jsxs)(y.Fragment,{children:[(0,y.jsxs)(`div`,{className:`kk-value`,children:[`R$ `,(0,y.jsx)(ws,{value:l,digits:4})]}),(0,y.jsx)(`div`,{className:`kk-unit`,children:`por 1 kk de gold`})]})]}),(0,y.jsx)(`div`,{className:`kk-divider`,children:(0,y.jsx)(`span`,{className:`kk-section-label`,children:`Simular Quantidade`})}),(0,y.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`8px`},children:[(0,y.jsx)(`label`,{className:`kk-label`,children:`Quantidade de gold (kk)`}),(0,y.jsx)(`input`,{className:`kk-input`,type:`number`,value:i,onChange:e=>a(e.target.value),placeholder:`ex: 500`,disabled:l===null}),(0,y.jsxs)(`div`,{className:`kk-result-panel ${d===null?``:`has-value`}`,children:[(0,y.jsx)(`div`,{className:`kk-corner kk-corner-tl`}),(0,y.jsx)(`div`,{className:`kk-corner kk-corner-tr`}),(0,y.jsx)(`div`,{className:`kk-corner kk-corner-bl`}),(0,y.jsx)(`div`,{className:`kk-corner kk-corner-br`}),d===null?(0,y.jsx)(`div`,{className:`kk-empty`,children:`— aguardando —`}):(0,y.jsxs)(y.Fragment,{children:[(0,y.jsxs)(`div`,{className:`kk-value`,children:[`R$ `,(0,y.jsx)(ws,{value:d})]}),(0,y.jsx)(`div`,{className:`kk-unit`,children:`custo total estimado`})]})]})]}),(0,y.jsx)(`div`,{className:`kk-divider`,children:(0,y.jsx)(`span`,{className:`kk-footnote`,children:`preço/kk = (preço de 1000 RC ÷ 1000) ÷ preço do RC em kk`})})]})]})}var Es=[{value:`stamina`,label:`Stamina`,icon:`⚡`},{value:`imbuements`,label:`Imbuements`,icon:`🧪`},{value:`rcgold`,label:`RC × Gold`,icon:`💎`},{value:`kkprice`,label:`Preço do KK`,icon:`💰`}];function Ds(){return(0,y.jsxs)(`div`,{style:{width:`100%`,maxWidth:`980px`},children:[(0,y.jsxs)(`div`,{style:{marginBottom:`32px`},children:[(0,y.jsx)(`h1`,{className:`font-display`,style:{fontSize:`clamp(1.3rem, 2.5vw, 1.75rem)`,fontWeight:700,letterSpacing:`0.14em`,color:`var(--text-high)`,textTransform:`uppercase`,lineHeight:1.1,marginBottom:`6px`},children:`Centro de Calculadoras`}),(0,y.jsx)(`p`,{style:{fontSize:`0.82rem`,color:`var(--text-low)`,letterSpacing:`0.04em`},children:`Ferramentas para otimizar seu progresso em Tibia`})]}),(0,y.jsxs)(wo,{defaultValue:`stamina`,children:[(0,y.jsx)(To,{style:{display:`inline-flex`,gap:`4px`,background:`oklch(0.14 0.022 220 / 0.8)`,backdropFilter:`blur(16px)`,WebkitBackdropFilter:`blur(16px)`,border:`1px solid var(--border-sub)`,borderRadius:`10px`,padding:`4px`,marginBottom:`20px`},children:Es.map(({value:e,label:t,icon:n})=>(0,y.jsxs)(Eo,{value:e,style:{position:`relative`,display:`flex`,alignItems:`center`,gap:`6px`,padding:`8px 20px`,borderRadius:`7px`,fontSize:`0.82rem`,fontWeight:500,letterSpacing:`0.03em`,border:`1px solid transparent`,cursor:`pointer`,transition:`all 0.22s cubic-bezier(0.4,0,0.2,1)`,color:`var(--text-low)`,background:`transparent`,outline:`none`},className:`
                 data-[state=active]:!bg-[oklch(0.72_0.20_185_/_0.16)]
                 data-[state=active]:!border-[oklch(0.72_0.20_185_/_0.42)]
                 data-[state=active]:!text-[oklch(0.92_0.12_185)]
                 data-[state=active]:!shadow-[0_0_18px_oklch(0.72_0.20_185_/_0.22)]
                 hover:!text-[oklch(0.82_0.08_200)]
                 hover:!bg-[oklch(0.72_0.20_185_/_0.07)]
-              `,children:[(0,y.jsx)(`span`,{children:n}),(0,y.jsx)(`span`,{children:t})]},e))}),[{value:`stamina`,Component:hs},{value:`imbuements`,Component:ys},{value:`rcgold`,Component:Ss}].map(({value:e,Component:t})=>(0,y.jsx)(Do,{value:e,children:(0,y.jsx)(`div`,{style:{background:`oklch(0.24 0.026 208 / 0.48)`,backdropFilter:`blur(36px) saturate(2.4)`,WebkitBackdropFilter:`blur(36px) saturate(2.4)`,border:`1px solid oklch(1 0 0 / 0.18)`,borderRadius:`16px`,padding:`36px`,boxShadow:`0 12px 48px oklch(0 0 0 / 0.35), 0 1px 0 oklch(1 0 0 / 0.14) inset, 0 0 80px oklch(0.72 0.20 185 / 0.04)`},children:(0,y.jsx)(t,{})})},e))]})]})}function Ts(){let[e,t]=(0,_.useState)(`calculadoras`);return(0,y.jsxs)(`div`,{style:{background:`var(--bg-base)`,minHeight:`100vh`,display:`flex`,flexDirection:`column`},children:[(0,y.jsx)(`div`,{style:{position:`fixed`,inset:0,pointerEvents:`none`,zIndex:0,background:`
+              `,children:[(0,y.jsx)(`span`,{children:n}),(0,y.jsx)(`span`,{children:t})]},e))}),[{value:`stamina`,Component:hs},{value:`imbuements`,Component:ys},{value:`rcgold`,Component:Ss},{value:`kkprice`,Component:Ts}].map(({value:e,Component:t})=>(0,y.jsx)(Do,{value:e,children:(0,y.jsx)(`div`,{style:{background:`oklch(0.24 0.026 208 / 0.48)`,backdropFilter:`blur(36px) saturate(2.4)`,WebkitBackdropFilter:`blur(36px) saturate(2.4)`,border:`1px solid oklch(1 0 0 / 0.18)`,borderRadius:`16px`,padding:`36px`,boxShadow:`0 12px 48px oklch(0 0 0 / 0.35), 0 1px 0 oklch(1 0 0 / 0.14) inset, 0 0 80px oklch(0.72 0.20 185 / 0.04)`},children:(0,y.jsx)(t,{})})},e))]})]})}function Os(){let[e,t]=(0,_.useState)(`calculadoras`);return(0,y.jsxs)(`div`,{style:{background:`var(--bg-base)`,minHeight:`100vh`,display:`flex`,flexDirection:`column`},children:[(0,y.jsx)(`div`,{style:{position:`fixed`,inset:0,pointerEvents:`none`,zIndex:0,background:`
           radial-gradient(ellipse 60% 40% at 20% 10%, oklch(0.72 0.20 185 / 0.07) 0%, transparent 70%),
           radial-gradient(ellipse 40% 50% at 80% 80%, oklch(0.65 0.18 200 / 0.05) 0%, transparent 60%)
-        `}}),(0,y.jsxs)(`div`,{style:{position:`relative`,zIndex:1,display:`flex`,flexDirection:`column`,minHeight:`100vh`},children:[(0,y.jsx)(b,{}),(0,y.jsxs)(`div`,{style:{display:`flex`,flex:1},children:[(0,y.jsx)(Fa,{onSelect:t}),(0,y.jsx)(`main`,{style:{flex:1,padding:`40px 48px`,overflowY:`auto`,color:`var(--text-high)`,display:`flex`,flexDirection:`column`,alignItems:`center`},children:e===`calculadoras`&&(0,y.jsx)(ws,{})})]})]}),(0,y.jsx)(ss,{richColors:!0,position:`top-right`})]})}var Es=Ts;(0,g.createRoot)(document.getElementById(`root`)).render((0,y.jsx)(_.StrictMode,{children:(0,y.jsx)(Es,{})}));
+        `}}),(0,y.jsxs)(`div`,{style:{position:`relative`,zIndex:1,display:`flex`,flexDirection:`column`,minHeight:`100vh`},children:[(0,y.jsx)(b,{}),(0,y.jsxs)(`div`,{style:{display:`flex`,flex:1},children:[(0,y.jsx)(Fa,{onSelect:t}),(0,y.jsx)(`main`,{style:{flex:1,padding:`40px 48px`,overflowY:`auto`,color:`var(--text-high)`,display:`flex`,flexDirection:`column`,alignItems:`center`},children:e===`calculadoras`&&(0,y.jsx)(Ds,{})})]})]}),(0,y.jsx)(ss,{richColors:!0,position:`top-right`})]})}var ks=Os;(0,g.createRoot)(document.getElementById(`root`)).render((0,y.jsx)(_.StrictMode,{children:(0,y.jsx)(ks,{})}));
